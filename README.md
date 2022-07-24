@@ -25,3 +25,7 @@ The script will extract all chapters into separate files named after the chapter
 The files will be placed in the target directory. 
 The extension is derrived from the input file.
 The default output directory is the current directory.
+
+## Contributing
+
+Constructive criticism, feature requests, and general discussion is welcome. Please be aware, that I won't respond in minutes. I do sleep (sometimes).
