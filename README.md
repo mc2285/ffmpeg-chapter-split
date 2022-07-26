@@ -1,5 +1,5 @@
 # ffmpeg-chapter-split
-A basic utility to extract all chapters from any media format supported by ffmpeg
+A basic utility to extract chapters from any media format supported by ffmpeg
 
 ## Why?
 Because ffmpeg lacks this functionality and many find it needed. There are existing solutions to this problem, but I find them overcomplicated.
@@ -7,11 +7,20 @@ Because ffmpeg lacks this functionality and many find it needed. There are exist
 ## How to use it?
 
 Try:
+
 ```bash
 python3 chapterSplit.py --help
 ```
-There are only two options: `-i` and `-o`. The first one takes a file path and the second one takes a directory path.
+
+There are only two options: `-c` and `-o`.
+The first one takes a list of chapters to extract and the second one takes the output directory path.
 The output directory does not have to exist.
+
+Both `-c` and `-o` are optional - only the input file has to be provided as a positional argument:
+
+```bash
+python3 chapterSplit.py inputFile.mp4
+```
 
 ## Requirements
 
@@ -21,7 +30,7 @@ The output directory does not have to exist.
 
 ## What results to expect?
 
-The script will extract all chapters into separate files named after the chapter title.
+The script will extract all chapters (or all selected chapters) into separate files named after the chapter title.
 The files will be placed in the target directory. 
 The extension is derrived from the input file.
 The default output directory is the current directory.
