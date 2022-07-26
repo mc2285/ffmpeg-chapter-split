@@ -12,11 +12,14 @@ Try:
 python3 chapterSplit.py --help
 ```
 
-There are only two options: `-c` and `-o`.
-The first one takes a list of chapters to extract and the second one takes the output directory path.
+There are only three options: `-c`, `-o` and `-t`.
+`-c` takes a list of chapters to extract and `-o` takes the output directory path.
 The output directory does not have to exist.
 
-Both `-c` and `-o` are optional - only the input file has to be provided as a positional argument:
+`-t` can be used to specify chapters manualy by suppling consecutive durations
+and can be combined with `-c` to skip some parts of a video
+
+`-c`, `-o` and `-t` are optional - only the input file has to be provided as a positional argument:
 
 ```bash
 python3 chapterSplit.py inputFile.mp4
