@@ -17,7 +17,7 @@ There are only three options: `-c`, `-o` and `-t`.
 The output directory does not have to exist.
 
 `-t` can be used to specify chapters manualy by suppling consecutive durations
-and can be combined with `-c` to skip some parts of a video
+and can be combined with `-c` to skip some parts of the input file.
 
 `-c`, `-o` and `-t` are optional - only the input file has to be provided as a positional argument:
 

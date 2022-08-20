@@ -84,6 +84,9 @@ if __name__ == "__main__":
                 "-ss", str(chapter["start_time"]),
                 "-to", str(chapter["end_time"]),
                 "-c", "copy",
+                "-map", "0:v?",
+                "-map", "0:a?",
+                "-map", "0:s?",
                 os.path.join(args.output_dir,
                              chapter["tags"]["title"] + "." + inputFileExtension)
             ],
